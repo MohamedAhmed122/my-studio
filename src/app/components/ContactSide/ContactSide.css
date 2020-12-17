@@ -1,0 +1,17 @@
+.contactSide{
+    flex: 0.3;
+    /* margin-left: 220px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact_header{
+    margin-top: 5rem;
+    line-height: 50px;
+    font-size: 35px;
+    font-family: 'Vidaloka', serif;
+    /* color:#096873; */
+    
+}
+
