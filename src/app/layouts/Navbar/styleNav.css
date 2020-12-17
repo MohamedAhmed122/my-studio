@@ -1,0 +1,35 @@
+.nav_links{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    align-items: center;
+    margin: 30px;
+}
+.link{
+    text-transform: uppercase;
+    color: #0A96A6;
+    margin: 0px 30px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.link_right{
+    margin-left: auto;
+    margin-right: 40px;
+}
+.nav_button{
+    background-color: #f7c52f;
+    color: white;
+    font-size: 15px;
+    outline-width: 0px;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.4); 
+    cursor: pointer;
+}
+.nav_button:hover{
+    background-color: #ebbc30;
+    box-shadow: 0px 5px 17px -10px rgba(0, 0, 0, 0.4); 
+}
