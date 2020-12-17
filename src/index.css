@@ -14,7 +14,11 @@ body, html{
   font-family: 'Lato', sans-serif;
   /* font-family: 'Vidaloka', serif; */
 
-
-
-
+}
+a{
+  color: red;
+  text-decoration: none;
+  color: #0A96A6;
+  font-size: 17px;
+  font-weight: bold;
 }
