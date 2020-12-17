@@ -1,14 +1,14 @@
 .hero{
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background-color: #eefcfd;
     margin-top: -30px;
-    position: absolute;
+    /* position: absolute; */
     border-bottom-right-radius: 170px;
 
 }
 .mrg-3{
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 .hero_block{
     display: flex;
