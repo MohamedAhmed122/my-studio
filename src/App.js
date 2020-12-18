@@ -5,6 +5,7 @@ import Footer from './app/layouts/Footer/Footer';
 import HomePage from './app/pages/homePage/HomePage';
 
 import './App.css';
+import AboutPage from './app/pages/AboutPage/AboutPage';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/contact' component={ContactPage} />
+          <Route exact  path='/about' component={AboutPage} />
         </Switch>
         <Footer/>
     </div>

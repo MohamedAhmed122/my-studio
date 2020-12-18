@@ -20,7 +20,7 @@ export default function Hero() {
                     <div className='hero_block'>
                         <div className='hero_left'>
                             <p className='hero_main_text'> 
-                                My Name is Mohamed & I build things on the internet 
+                                My Name is Mohamed <span>&</span> I build things on the internet 
                             </p>
                             <p className='hero_sub_text'>
                                 I develop and design website and mobile application

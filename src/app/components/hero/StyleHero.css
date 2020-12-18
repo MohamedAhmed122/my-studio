@@ -2,26 +2,26 @@
     width: 100%;
     height: 95vh;
     background-color: #eefcfd;
-    margin-top: -30px;
-    /* position: absolute; */
+    /* margin-top: -30px; */
     border-bottom-right-radius: 170px;
+}
 
-}
-.mrg-3{
-    /* margin-top: 60px; */
-}
 .hero_block{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 60px;
 }
 .hero_main_text{
     font-size: 45px;
     font-weight: bold;
     font-family: 'Vidaloka', serif;
     color:#096873;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     line-height: 70px;
+}
+.hero_main_text span{
+    font-family: 'Lato', serif;
 }
 .hero_sub_text{
     margin-top: 40px;
