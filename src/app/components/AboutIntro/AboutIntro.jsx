@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { colors, Container } from '@material-ui/core'
+import {  Container } from '@material-ui/core'
 
 import './AboutIntro.css'
 
@@ -15,7 +15,7 @@ export default function AboutIntro() {
                textAlign:'center',
                color:'#0A96A6'
            }}>
-                Developer is an organism that turns coffee into code.
+                Developer is an organism that turns coffee into code 😁
            </p>
             <Container>
 
@@ -34,7 +34,7 @@ export default function AboutIntro() {
                         <h1>Also about me</h1>
                         <h4>
                             I am Mohamed Yousef, a Self-tought developer, 
-                            I love coding because i think programing is fun :).
+                            I love coding because i think programing is fun :)
                             <br/> <br />
                             I have serious passion for UI effects, animations and creating intuitive, 
                             dynamic user experiences.

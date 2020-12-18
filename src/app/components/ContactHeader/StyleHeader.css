@@ -9,9 +9,13 @@
 .contact_btn{
     margin-left: auto;
     margin-right: 30px;
-    margin-top: 40px;
+    margin-top: 0px;
 }
-
+.logo_big{
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+}
 .close_btn{
     display: flex;
     align-items: center;

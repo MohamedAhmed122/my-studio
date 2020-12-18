@@ -22,7 +22,7 @@ export default function Hero() {
                             <p className='hero_main_text'> 
                                 My Name is Mohamed <span>&</span> I build things on the internet 
                             </p>
-                            <p className='hero_sub_text'>
+                        <p className='hero_sub_text'>
                                 I develop and design website and mobile application
                             </p>
                             <div className='hero_btn'>

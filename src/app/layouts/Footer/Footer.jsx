@@ -11,6 +11,9 @@ import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import CodeIcon from '@material-ui/icons/Code';
 
+import logo from '../../assets/logo.png'
+
+
 import './styleFooter.css'
 
 export default function Footer() {
@@ -37,7 +40,9 @@ export default function Footer() {
                     </div>
 
                     <div className='footer_middle'>
-                        <h1 style={{margin: '40px',}}>LOGO</h1>
+                        <div className='logo_container'>
+                            <img src={logo} alt='Logo' className='logo' />
+                        </div>
                         <p className='copyright'> &copy; Copyright by Mohamed Youssef</p>
                     </div>
 

@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 5rem;
+    padding-top: 3rem;
 
 }
 .icon_footer{
@@ -38,4 +38,15 @@
 }
 .copyright{
     margin-top: 0rem;
+}
+.logo_container{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-bottom: 35px;
 }
