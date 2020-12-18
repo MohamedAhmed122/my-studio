@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useHistory } from 'react-router-dom';
+
 import { Button, Hidden, IconButton } from '@material-ui/core'
 
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -17,21 +19,24 @@ import logo from '../../assets/logo.png'
 import './styleFooter.css'
 
 export default function Footer() {
+
+    const history = useHistory()
+
     return (
         <div className='footer'>
             <>
                 <div className='footer_container'>
                 <Hidden smDown>
                     <div className='footer_right'>
-                        <div className='icon_footer'>
+                        <div className='icon_footer' onClick={()=>history.push('/')}>
                             <IconButton> <HomeIcon /> </IconButton>
                             <Button className='button_footer'>Home</Button>
                         </div>
-                        <div className='icon_footer'>
+                        <div className='icon_footer' onClick={()=>history.push('/project')}>
                             <IconButton> <CodeIcon /> </IconButton>
                             <Button className='button_footer'>Projects</Button>
                         </div>
-                        <div className='icon_footer'>
+                        <div className='icon_footer' onClick={()=>history.push('/about')}>
                             <IconButton><InfoIcon /></IconButton>
                             <Button className='button_footer'>
                                 About Me
@@ -51,10 +56,30 @@ export default function Footer() {
                     <div className='footer_left'>
                         <h3>Socially you will find me on</h3>
                         <div className='social'>
-                        <IconButton> <GitHubIcon fontSize='large'/> </IconButton>
-                            <IconButton> <FacebookIcon fontSize='large'/> </IconButton>
-                            <IconButton> <EmailIcon fontSize='large'/> </IconButton>
-                            <IconButton> <WhatsAppIcon fontSize='large'/> </IconButton>
+                            <a 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            href="https://github.com/MohamedAhmed122">
+                                <IconButton> <GitHubIcon fontSize='large'/> </IconButton>
+                            </a>
+                            <a 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            href="https://www.facebook.com/profile.php?id=100006555460648"> 
+                                <IconButton> <FacebookIcon fontSize='large'/> </IconButton>
+                            </a>
+                            <a 
+                            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mohamed.ahm9833@gmail.com" 
+                            rel="noopener 
+                            noreferrer" target="_blank"> 
+                                <IconButton> <EmailIcon fontSize='large'/> </IconButton>
+                            </a>
+                            <a 
+                            href="whatsapp://send?abid=+79131136637&text=Hello%2C%20World!" 
+                            rel="noopener noreferrer" 
+                            target="_blank">
+                                <IconButton> <WhatsAppIcon fontSize='large'/> </IconButton>
+                            </a>
                         </div>
                     </div>
                 </Hidden>

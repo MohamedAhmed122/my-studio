@@ -1,0 +1,13 @@
+.menu_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+}
+.close_menu{
+    margin-top: 40px;
+    margin-left: 20px;
+}
