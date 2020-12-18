@@ -1,0 +1,18 @@
+.contact_page{
+    display: flex;
+}
+.contact_page_left{
+    flex: 0.3;
+}
+.contact_page_right{
+    flex: 0.7;
+}
+@media(max-width:850px){
+    .contact_page_left{
+        flex: 0;
+        display: none;
+    }
+    .contact_page_right{
+        flex: 1;
+    }
+}

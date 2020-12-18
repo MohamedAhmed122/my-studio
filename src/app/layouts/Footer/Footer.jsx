@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button, IconButton } from '@material-ui/core'
+import { Button, Hidden, IconButton } from '@material-ui/core'
 
 import FacebookIcon from '@material-ui/icons/Facebook';
 import EmailIcon from '@material-ui/icons/Email';
@@ -21,7 +21,7 @@ export default function Footer() {
         <div className='footer'>
             <>
                 <div className='footer_container'>
-
+                <Hidden smDown>
                     <div className='footer_right'>
                         <div className='icon_footer'>
                             <IconButton> <HomeIcon /> </IconButton>
@@ -38,6 +38,7 @@ export default function Footer() {
                             </Button>
                         </div>
                     </div>
+                </Hidden>
 
                     <div className='footer_middle'>
                         <div className='logo_container'>
@@ -46,6 +47,7 @@ export default function Footer() {
                         <p className='copyright'> &copy; Copyright by Mohamed Youssef</p>
                     </div>
 
+                <Hidden smDown>
                     <div className='footer_left'>
                         <h3>Socially you will find me on</h3>
                         <div className='social'>
@@ -55,6 +57,7 @@ export default function Footer() {
                             <IconButton> <WhatsAppIcon fontSize='large'/> </IconButton>
                         </div>
                     </div>
+                </Hidden>
 
                 </div>
             </>

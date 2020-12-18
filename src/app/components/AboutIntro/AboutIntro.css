@@ -29,10 +29,8 @@
     margin-top: 4rem;
     display: flex;
     justify-content: space-around;
-    
 }
 .intro_features h1{
-    /* text-align: center; */
     font-family: 'Vidaloka', serif;
     text-transform: uppercase;
     color:#096873;
@@ -47,10 +45,68 @@
 .intro_features p{  
     margin-bottom: 1.5rem;
     font-size: 17px;
-    /* color: #0A96A6; */
 }
 .intro_feature_right h4{
     line-height: 25px;
     font-size: 18px;
     width: 35vw;
+}
+
+@media(max-width:1000px){
+    .intro_feature_left{
+        border-right: 8px solid white;
+        padding-right: 10px;
+    }
+    .intro_features p{  
+        font-size: 15px;
+    }
+    .intro_feature_right h4{
+        line-height: 25px;
+        font-size: 16px;
+        width: 35vw;
+    }
+}
+
+@media(max-width:850px){
+    .about_intro{
+      
+        height: auto;
+     
+    }
+    .intro_features{
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .intro_feature_left{
+        border-bottom: 8px solid white;
+        border-right: none;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .intro_feature_right{
+        text-align: center;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro_feature_right h4{
+       text-align: center;
+       width: 60vw;
+    }
+}
+@media(max-width:550px){
+    .about_intro img{
+        height: 180px;
+        width: 180px;
+        border-radius: 90px;
+    }
+}
+@media(max-width:450px){
+    .intro_feature_right h4{
+        text-align: center;
+        width: 80vw;
+        margin-bottom: 30px;
+    }
 }

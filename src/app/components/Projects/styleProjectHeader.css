@@ -59,5 +59,30 @@
 .project_select_container .icon3{
     color: #f07b7b !important;
     margin-left: 0.5rem;
+}
+@media(max-width:600px){
+    .project_select{
+        margin-bottom: 5rem; 
+        flex-direction: column;
+    }
+    .project_select_container{
+        margin-bottom: 1.5rem;
+       justify-content: center;
+    }
+}
 
+@media(max-width:500px){
+    .project_header{
+        margin-top: 7rem;
+    }
+    .project_header_text{
+        font-size: 35px;
+        text-align: center;
+        width: 80vw;
+        margin-left: 1rem;
+        line-height: 50px;
+    }
+    .select{
+        margin-top: 5rem;
+    }
 }

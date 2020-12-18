@@ -28,8 +28,6 @@
   font-size: 18px;
   margin: 0px 2rem;
   line-height: 35px;
-  /* color: #0A96A6; */
-
 }
 
 .about_right h3{
@@ -37,5 +35,43 @@
     font-size: 20px;
     margin-top: 2rem;
     color: #0A96A6;
-  
-  }
+}
+@media(max-width:900px){
+    .about{
+       flex-direction: column;
+    }
+    .about_right{
+        width: 65vw;
+        margin-top: 5rem;
+    }
+    .about_right p{
+        margin: 0rem 0rem;
+    }
+      
+    .about_right h3{
+        margin-bottom: 4rem;
+    }
+
+}
+@media(max-width:450px){
+    .about{
+        margin-top: 5rem;
+    }
+    .about_main_text{
+        font-size: 25px;
+        width: 98%;
+        line-height: 35px;
+        margin: 20px;
+    }
+    .about_right{
+        width: 85vw;
+        margin-top: 3rem;
+    }
+    .about_right p{
+        margin: 0rem 0rem;
+    }
+      
+    .about_right h3{
+        margin-bottom: 4rem;
+    }
+}
