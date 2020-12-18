@@ -13,7 +13,7 @@ export default function ContactSide() {
             {/* <p className='or'>OR</p> */}
             <h1 className='contact_header'>
                 Maybe you <br />
-                wanna Hire <br />  
+                wanna hire <br />  
                 me ?
             </h1>
         </div>

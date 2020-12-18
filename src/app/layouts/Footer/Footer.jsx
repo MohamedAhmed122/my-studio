@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button, Container, IconButton } from '@material-ui/core'
+import { Button, IconButton } from '@material-ui/core'
 
 import FacebookIcon from '@material-ui/icons/Facebook';
 import EmailIcon from '@material-ui/icons/Email';

@@ -1,13 +1,14 @@
 import React from 'react'
 
 import { Container } from '@material-ui/core'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 
 import './StyleHeader.css'
 
 export default function ContactHeader() {
+    const history = useHistory()
     return (
         <Container>
             <div className='contactHeader'>
@@ -15,7 +16,7 @@ export default function ContactHeader() {
                     <Link to='/'>LOGO</Link>
                 </div>
                 <div className='contact_btn'>
-                <button className='close_btn'>
+                <button onClick={()=>history.push('/')} className='close_btn'>
                     Close
                     <HighlightOffIcon className='close_icon' />
                     </button>
