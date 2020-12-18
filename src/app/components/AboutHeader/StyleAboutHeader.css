@@ -1,0 +1,41 @@
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    
+}
+.about_main_text{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Vidaloka', serif;
+    color:#096873;
+    width: 450px;
+    text-align: center;
+    line-height: 65px;
+}
+.about_main_text span{
+    color: #f7c52f;
+}
+.about_right{
+    width: 45vw;
+}
+
+.about_right p{
+  text-align: center;
+  font-size: 18px;
+  margin: 0px 2rem;
+  line-height: 35px;
+  /* color: #0A96A6; */
+
+}
+
+.about_right h3{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2rem;
+    color: #0A96A6;
+  
+  }
