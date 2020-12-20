@@ -5,19 +5,23 @@ import Footer from './app/layouts/Footer/Footer';
 import HomePage from './app/pages/homePage/HomePage';
 import AboutPage from './app/pages/AboutPage/AboutPage';
 import ProjectPage from './app/pages/ProjectPage/ProjectPage';
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-        <Switch>
+        <Switch >
           <Route exact path='/' component={HomePage} />
           <Route exact path='/contact' component={ContactPage} />
           <Route exact  path='/about' component={AboutPage} />
           <Route exact  path='/project' component={ProjectPage} />
         </Switch>
-        {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

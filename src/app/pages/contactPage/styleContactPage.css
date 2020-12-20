@@ -1,4 +1,4 @@
-/* .contact_page{
+.contact_page{
     display: flex;
 }
 .contact_page_left{
@@ -15,52 +15,6 @@
     .contact_page_right{
         flex: 1;
     }
-} */
-
-/* background: linear-gradient(90deg,#051421,#042727); */
+}
 
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-}
-.card{
-    margin: 40px;
-    transition: transform .1s;
-}
-.card:hover{
-   transform: scale(1.2);
-}
-.card > img{
-    height: 350px;
-    width: 350px;
-    object-fit:cover;
-    border-radius: 10px;
-}
-.title{
-    color: white;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: 100;
-    opacity: 0.5;
-
-}
-.like_container{
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center;
-    flex-direction: row-reverse !important;
-    flex-direction: row;
-    color: #225dff !important;
-    margin-top: 10px;
-}
-.likes{
-    color: #225dff;
-    font-weight: 100;
-    font-size: 22px;
-    display: block;
-    margin-right: 10px;
-
-}
