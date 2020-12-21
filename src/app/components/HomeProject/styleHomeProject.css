@@ -17,6 +17,13 @@ button{
     cursor: pointer;
     margin-top: 40px;
 }
+.bg:hover{
+        /* -webkit-transform: skew(12.5deg, 0) translateX(-45px); */
+        /* -moz-transform: skew(12.5deg, 0) translateX(-45px);
+        -ms-transform: skew(12.5deg, 0) translateX(-45px);
+        transform: skew(12.5deg, 0) translateX(-45px); */
+        perspective: 2000px;
+}
 .bg button{
     margin-right: 35rem;
     background-color: transparent;
