@@ -1,13 +1,69 @@
 import React from 'react'
-import hang from '../../assets/Images/hangout1.png'
-import shoty from '../../assets/Images/shoty1.png'
-import done from '../../assets/Images/done1.png'
-import covid from '../../assets/Images/covid1.png'
+import mern from '../../assets/Images/mern3.png'
+import hangout from '../../assets/Images/hang3.png'
+import covid from '../../assets/Images/covid3.png'
+import shoty from '../../assets/Images/shoty3.png'
+import done from '../../assets/Images/done3.png'
+import forget from '../../assets/Images/forget3.png'
+
+
+import LanguageIcon from '@material-ui/icons/Language';
+import GitHubIcon from '@material-ui/icons/GitHub';
+
+import { Container } from '@material-ui/core'
+import './styleProjects.css'
 
 export default function Projects() {
     return (
-        <div>
-            <h1>Hello From the Project</h1>
+        <div className="projects_" style={{backgroundColor: '#eefcfd',}}>
+          <Container>
+              {
+                  data.map(project=>(
+                <div key={project.id}>
+                <div 
+                    className='bg' 
+                    style={{backgroundImage: `url(${project.image})`,}}
+                    />
+                    <div className='project_main_text_container'>
+                        <h2>Description</h2>
+                        <p>{project.header}</p>
+                        <h2>Topics & Libraries</h2>
+                        <div className='weird_container'>
+                            {
+                                project.tools.map(tool=>(
+                                    <div className='weird'>
+                                        {tool}
+                                    </div>
+
+                                ))
+                            }
+                        </div>
+                        <div className='btn_group'>
+                            {
+                                project.link &&
+                                <a target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    href={project.webLink}
+                                > 
+                                    <button className='project_btn'>
+                                    Live Now  <LanguageIcon />
+                                    </button>
+                                </a> 
+                            }
+                            <a target="_blank" 
+                            rel="noopener noreferrer" 
+                            href={project.githubLink}
+                            > 
+                                <button className='github'>
+                                Visit Github <GitHubIcon /> 
+                                </button>
+                            </a> 
+                        </div>
+                    </div>
+                    </div>
+                  ))
+              }
+          </Container>
         </div>
     )
 }
@@ -16,8 +72,10 @@ export default function Projects() {
 const data = [
     {
         id: 1,
-        image : hang,
-        header: 'Hangout Club',
+        image : hangout,
+        link:true,
+        header: 
+        'Home Page contain Some animation and description about the App, Main Functionality : Create events, Filter events Google & Facebook Authentication, Join Events, Create Profile, And Finally Chatting in the Community  ',
         tools:
         [
             'React',
@@ -47,8 +105,10 @@ const data = [
     },
     {
         id: 2,
-        image : covid,
-        header: 'ProShop E-commerce App (MERN Stack)',
+        image : mern,
+        link:true,
+        header: 
+        "E-commerce Website, Login/ Registration, Add item to cart, Shipping System Payment system  Admin Panel where Admin Can control Users, Products and orders",
         tools:[
             "Material UI React",
             "axios",
@@ -78,11 +138,14 @@ const data = [
     {
         id: 10,
         image : covid,
-        header: 'Covid-19 tracker',
+        link:true,
+        header: 
+        'Covid-19 tracker, You can See Country Live Cases, Cases, deaths and Recovered, for every Country & map that display data for each country, and finally Graph  ',
         tools:[
             "Material UI React",
             "axios",
             "chart-js",
+            "chart-js2",
             "firebase",
             "hooks",
             "Functional Component",
@@ -97,7 +160,9 @@ const data = [
     {
         id: 3,
         image : shoty,
-        header: 'Clothing App Store e-commerce',
+        link:true,
+        header: 
+        'Clothing e-commerce store, where can Login/Register & Google Authentication  then You can Add Item to cart, payment system using stripe ',
         tools:[
             "react-redux",
             "firebase",
@@ -108,6 +173,7 @@ const data = [
             "react-router-dom",
             "react-stripe-checkout",
             "redux-logger",
+            "redux-thunk",
             "redux-persist",
             "reselect"
         ],
@@ -117,8 +183,9 @@ const data = [
     {
         id: 4,
         image : done,
-        header: 'Done With It (Mobile App)',
-        text:'Sell Your Stuff online',
+        link:false,
+        header: 
+        'Done With It (Mobile App), Where you can sell your old item online, Functionality Login/Register Access Camera And Location CRUD Functionality Sending Messages ',
         tools:[
            "React-native",
            "expo",
@@ -143,9 +210,9 @@ const data = [
     },
     {
         id: 5,
-        image : done,
-        header: 'Not To Forget (Mobile App)',
-        text:'Sophisticated To do Tasks ',
+        image : forget,
+        header: 'Not To Forget (Mobile App),Sophisticated To do Tasks, Login/Register, then You can Create Tasks & Create Category & CRUD Functionality',
+        link:false,
         tools:[
            "React-native",
            "expo",
