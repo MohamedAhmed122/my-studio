@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from '../../components/hero/Hero'
+import HomeProject from '../../components/HomeProject/HomeProject'
 // import Loading from '../../components/Loading/Loading'
 
 export default function HomePage() {
@@ -18,7 +19,9 @@ export default function HomePage() {
     return (
         <div>
            <Hero />
-           <div style={{marginTop: 400}}></div>
+           <div style={{marginTop: 200}}>
+               <HomeProject />
+           </div>
         </div>
     )
 }
