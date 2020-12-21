@@ -74,7 +74,7 @@
     box-shadow: 0 30px 100px 30px rgba(118,118,197,0.1);
     border: none;
 }
-
+.topics{display: inline;}
 @media(max-width: 700px){
     .btn_group{flex-direction: column; }
     .github{
@@ -92,4 +92,10 @@
 }
 @media(max-width: 550px){
     .projects_{ width: 100%; }
+}
+@media(max-width: 500px){
+    .weird_container{
+        display: none;
+    }
+    .topics{display: none;}
 }

@@ -27,7 +27,7 @@ export default function Projects() {
                     <div className='project_main_text_container'>
                         <h2>Description</h2>
                         <p>{project.header}</p>
-                        <h2>Topics & Libraries</h2>
+                        <h2 className='topics'>Topics & Libraries</h2>
                         <div className='weird_container'>
                             {
                                 project.tools.map(tool=>(

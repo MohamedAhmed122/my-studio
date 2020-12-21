@@ -4,14 +4,19 @@ import { Container } from '@material-ui/core'
 import Logo from '../../assets/logo.png'
 
 import './styleNav.css'
-import { Link, useHistory } from 'react-router-dom'
+import {Link,  useHistory } from 'react-router-dom'
 import Menu from './Menu/Menu'
+import { useMediaQuery, useTheme } from '@material-ui/core';
 
 
 export default function Navbar() {
     const history = useHistory()
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.down("sm"));
     return (
-        < >
+        <>
+          {
+            !matches?
             <Container>
               <div className='navbar'>
                 <div className='navbar_logo_container'>
@@ -29,8 +34,10 @@ export default function Navbar() {
                     <button onClick={()=>history.push('/contact')} className='nav_button'>Let's talk</button>
                   </div>
               </div>
-            </Container>
-            {/* <Menu />            */}
+            </Container>:
+
+            <Menu />           
+          }
         </>
     )
 }

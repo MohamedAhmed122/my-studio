@@ -5,10 +5,7 @@ import Footer from './app/layouts/Footer/Footer';
 import HomePage from './app/pages/homePage/HomePage';
 import AboutPage from './app/pages/AboutPage/AboutPage';
 import ProjectPage from './app/pages/ProjectPage/ProjectPage';
-import {
-  CSSTransition,
-  TransitionGroup,
-} from 'react-transition-group';
+
 
 import './App.css';
 
