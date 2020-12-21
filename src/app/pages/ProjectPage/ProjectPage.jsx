@@ -6,7 +6,7 @@ import Navbar from '../../layouts/Navbar/Navbar'
 export default function ProjectPage() {
     return (
         <div>
-           {/* <Navbar /> */}
+           <Navbar />
            <ProjectHeader />
            <Projects />
         </div>

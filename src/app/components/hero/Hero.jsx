@@ -12,6 +12,9 @@ import './StyleHero.css'
 
 
 export default function Hero() {
+
+    const handleScroll =(values)=> window.scrollTo({top:values,behavior: 'smooth'})
+
     return (
         <div className='hero'>
             <div className='mrg-3'>
@@ -26,7 +29,7 @@ export default function Hero() {
                                 I develop and design website and mobile application
                             </p>
                             <div className='hero_btn'>
-                                <button className='projects_btn'>Projects</button>
+                                <button className='projects_btn' onClick={()=>handleScroll(900)}>Projects</button>
                             </div>
                         </div>
                         <div className='hero_right'>
