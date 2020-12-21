@@ -21,7 +21,7 @@ function App() {
           <Route exact  path='/about' component={AboutPage} />
           <Route exact  path='/project' component={ProjectPage} />
         </Switch>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
