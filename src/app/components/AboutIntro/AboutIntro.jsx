@@ -3,12 +3,13 @@ import React from 'react'
 import {  Container } from '@material-ui/core'
 
 import './AboutIntro.css'
+import Me from '../../assets/me.jpeg'
 
 
 export default function AboutIntro() {
     return (
         <div className='about_intro'>
-            <img  src={imageSrc} alt='Mohamed Youssef'/>
+            <img  src={Me} alt='Mohamed Youssef'/>
            <p style={{
                marginTop:50,
                fontSize:20,
@@ -51,7 +52,7 @@ export default function AboutIntro() {
     )
 }
 
-const imageSrc ='https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/12710975_1758121331083032_4998605856255008369_o.jpg?_nc_cat=106&ccb=2&_nc_sid=174925&_nc_ohc=DdwUek-npMoAX9qHn8w&_nc_ht=scontent-arn2-1.xx&oh=d3ee3132b5764785cfd35adc791d6592&oe=6003FF5F'
+
 
 const aboutData =[
     {

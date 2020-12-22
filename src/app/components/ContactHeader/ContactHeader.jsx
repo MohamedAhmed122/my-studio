@@ -18,7 +18,7 @@ export default function ContactHeader() {
                     <img className='logo_big' src={logo} alt='logo' />
                 </div>
                 <div className='contact_btn'>
-                <button onClick={()=>history.push('/')} className='close_btn'>
+                <button onClick={()=>history.goBack()} className='close_btn'>
                     Close
                     <HighlightOffIcon className='close_icon' />
                     </button>

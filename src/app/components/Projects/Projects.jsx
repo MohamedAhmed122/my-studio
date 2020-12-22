@@ -132,8 +132,8 @@ const data = [
             "Pagination",
             "react-paypal-button-v2",
         ],
-        webLink:'https://covid1-9.web.app',
-        githubLink:'https://github.com/MohamedAhmed122/Covid-19-project'
+        webLink:'https://pro-e-commerce.herokuapp.com',
+        githubLink:'https://github.com/MohamedAhmed122/Ecommerce-Mern'
     },
     {
         id: 10,
@@ -177,8 +177,8 @@ const data = [
             "redux-persist",
             "reselect"
         ],
-        webLink:'https://covid1-9.web.app',
-        githubLink:'https://github.com/MohamedAhmed122/Covid-19-project'
+        webLink:'https://github.com/MohamedAhmed122/Shoty',
+        githubLink:'https://shoty-db.web.app'
     },
     {
         id: 4,

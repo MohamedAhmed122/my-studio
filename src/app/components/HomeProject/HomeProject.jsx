@@ -21,6 +21,7 @@ const trans = (x, y, s) => `perspective(10000px) rotateX(${x}deg) rotateY(${y}de
 export default function HomeProject() {
     
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 10, tension: 100, friction: 70 } }))
+    const [props2, set2] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 10, tension: 100, friction: 70 } }))
     const history = useHistory()
     return (
         <Container style={{marginBottom: '10rem'}}>
@@ -69,11 +70,11 @@ export default function HomeProject() {
                 href='https://github.com/MohamedAhmed122/React-native-doneWithIT'
             >
             <animated.div
-                onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-                onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                onMouseMove={({ clientX: x, clientY: y }) => set2({ xys: calc(x, y) })}
+                onMouseLeave={() => set2({ xys: [0, 0, 1] })}
                 style={{
                     backgroundImage: `url(${done})`,
-                    transform: props.xys.interpolate(trans)
+                    transform: props2.xys.interpolate(trans)
                 }}
                 className='bg shoty'
             >

@@ -36,7 +36,7 @@
     width: 220px;
     height: 50px;
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     font-size: 17px;
     color: white;
     margin-left: 3rem;
@@ -157,12 +157,10 @@
    }
 }
   
-@media(max-width: 330px){
-    .hero_right{
-        display: none;
-    }
+@media(max-width: 385px){
+
     .hero_main_text{
-        font-size: 20px;
+        font-size: 25px;
         line-height: 35px;
         margin-top: 0px;
         text-align: center;
@@ -170,12 +168,12 @@
     }
   
   .hero_sub_text{
-      margin-top: 30px;
+      margin-top: 40px;
       text-align: center;
       font-size: 18px;
   }
   .hero_btn{
-      margin-top: 20px;
+      margin-top: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
