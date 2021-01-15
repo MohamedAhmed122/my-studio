@@ -10,6 +10,7 @@ import { Container } from '@material-ui/core';
 export default function ProjectHeader() {
 
     const handleScroll =(values)=> window.scrollTo({top:values,behavior: 'smooth'})
+    
       
     return (
         <div className='project_header'>
