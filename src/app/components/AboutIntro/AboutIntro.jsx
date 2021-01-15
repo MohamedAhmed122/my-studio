@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import {  Container } from '@material-ui/core'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './AboutIntro.css'
-import Me from '../../assets/me.jpeg'
+import Me from '../../assets/me.png'
 
 
 export default function AboutIntro() {
+    useEffect(()=>{
+        AOS.init({duration :1200})
+    },[])
     return (
         <div className='about_intro'>
             <img  src={Me} alt='Mohamed Youssef'/>
-           <p style={{
+           <p data-aos='fade-top' style={{
                marginTop:50,
                fontSize:20,
                textAlign:'center',
@@ -22,7 +27,7 @@ export default function AboutIntro() {
 
                 <div className='intro_features'>
                     <div className='intro_feature_left'>
-                        <h1>About me</h1>
+                        <h1 data-aos='fade-right'>About me</h1>
                        { aboutData.map(data =>(
 
                             <p key={data.id}>
@@ -32,7 +37,7 @@ export default function AboutIntro() {
                         
                     </div>
                     <div className='intro_feature_right'>
-                        <h1>Also about me</h1>
+                        <h1 data-aos='fade-left'>Also about me</h1>
                         <h4>
                             I am Mohamed Yousef, a Self-tought developer, 
                             I love coding because i think programing is fun :)

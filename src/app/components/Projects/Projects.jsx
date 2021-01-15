@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import mern from '../../assets/Images/mern3.png'
 import hangout from '../../assets/Images/hang3.png'
 import covid from '../../assets/Images/covid3.png'
@@ -12,14 +12,20 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 import { Container } from '@material-ui/core'
 import './styleProjects.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Projects() {
+
+    useEffect(()=>{
+        AOS.init({duration :1400})
+    },[])
     return (
         <div className="projects_" style={{backgroundColor: '#eefcfd',}}>
           <Container>
               {
                   data.map(project=>(
-                <div key={project.id}>
+                <div data-aos='fade-top' key={project.id}>
                 <div 
                     className='bg' 
                     style={{backgroundImage: `url(${project.image})`,}}

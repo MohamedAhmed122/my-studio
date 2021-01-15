@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import hangoutImage from '../../assets/Images/hang.png'
 import MernImage from '../../assets/Images/mern.png'
@@ -7,7 +7,8 @@ import done from '../../assets/Images/done.png'
 
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './styleHomeProject.css'
 
 import { useSpring, animated } from 'react-spring'
@@ -19,6 +20,9 @@ const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWid
 const trans = (x, y, s) => `perspective(10000px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 export default function HomeProject() {
+    useEffect(()=>{
+        AOS.init({duration:1000})
+    },[])
     
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 10, tension: 100, friction: 70 } }))
     const [props2, set2] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 10, tension: 100, friction: 70 } }))
@@ -26,8 +30,8 @@ export default function HomeProject() {
     return (
         <Container style={{marginBottom: '10rem'}}>
             <div className='projects_text'>
-                <p className='project_text_main'> My Projects</p>
-                <h3 > My work is the bridge to various insightful digital experiences.</h3>
+                <p data-aos='fade-right' className='project_text_main'> My Projects</p>
+                <h3 data-aos='fade-left'> My work is the bridge to various insightful digital experiences.</h3>
             </div>
            <a
                 target="_blank" 
@@ -103,7 +107,7 @@ export default function HomeProject() {
                 justifyContent: 'center',
                 marginTop:'3rem'
             }}>
-                <button onClick={()=> history.push('/project')} className='project_btn'>
+                <button data-aos='fade-left' onClick={()=> history.push('/project')} className='project_btn'>
                     See More Projects <ArrowRightAltIcon />
                 </button>
             </div>   
