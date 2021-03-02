@@ -62,15 +62,15 @@ export default function AboutIntro() {
 const aboutData =[
     {
         id:1,
-        title:'I have One Year & Half Experience'
+        title:'I have Two Year & Half Experience'
     },
     {
         id:2,
-        title:'I have Solid Knowledge in React & React Native'
+        title:'I have Solid Knowledge in React & Next.js & React Native'
     },
     {
         id:3,
-        title:'I have Good  Knowledge in JavaScript'
+        title:'I have Good  Knowledge in JavaScript & TypeScript'
     },
     {
         id:4,
@@ -82,11 +82,11 @@ const aboutData =[
     },
     {
         id:6,
-        title:'I have Basic Knowledge in TypeScript, But I can Learn it ;)'
+        title:'I have Basic Knowledge in Node.js, express & MongoDB ;)'
     },
     {
         id:7,
-        title:'I have Basic Knowledge in Node ,But I can Learn it ;)'
+        title:'I have Basic Knowledge in Vue.js, But I can Learn it ;)'
     },
    
 ]
