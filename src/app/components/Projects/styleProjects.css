@@ -1,101 +1,115 @@
-.projects_{
-    width: 95%;
-    margin-left: 2.5%;
-    border-radius: 40px;
-    height: auto;
-    background-color: #eefcfd;    
-    border-bottom-right-radius: 170px;
-    display: flex;
-    align-items: center;
+.projects_ {
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 40px;
+  height: auto;
+  background-color: #eefcfd;
+  border-bottom-right-radius: 170px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.project_main_text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project_main_text_container h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #096873;
+  font-family: "Vidaloka", serif;
+  margin-bottom: 20px;
+}
+.project_main_text_container p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  width: 70%;
+  margin-left: 15%;
+  color: #0a96a6;
+  margin-bottom: 60px;
+}
+.weird_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  margin-left: 15%;
+}
+.weird {
+  background-color: #c7f3f7;
+  color: #0a96a6;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 20px;
+}
+.weird:hover {
+  background-color: #b7f9ff;
+}
+.btn_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+.github {
+  padding: 20px;
+  border: 1px solid #0a96a6;
+  width: 300px;
+  background-color: white;
+  color: #0a96a6 !important;
+  font-size: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 2rem;
+}
+.github:hover {
+  box-shadow: 0 30px 100px 30px rgba(118, 118, 197, 0.1);
+  border: none;
+}
+.topics {
+  display: inline;
+}
+.link_ {
+  margin-left: 20px;
+}
+@media (max-width: 700px) {
+  .btn_group {
     flex-direction: column;
-    margin-bottom: 100px;
+  }
+  .github {
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+  .weird_container {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .project_main_text_container p {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .link_ {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
 }
-.project_main_text_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@media (max-width: 550px) {
+  .projects_ {
+    width: 100%;
+  }
 }
-.project_main_text_container h2{
-    text-align: center;
-    font-size: 40px;
-    color:#096873;
-    font-family: 'Vidaloka', serif;
-    margin-bottom: 20px;
-}
-.project_main_text_container p{
-    text-align: center;
-    font-size: 20px;
-    line-height: 40px;
-    width: 70%;
-    margin-left: 15%;
-    color:  #0A96A6;
-    margin-bottom: 60px;
-}
-.weird_container{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 70%;
-    margin-left: 15%;
-}
-.weird{
-    background-color: #c7f3f7;
-    color:  #0A96A6;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin: 10px;
-    border-radius:20px;
-}
-.weird:hover{
-    background-color: #b7f9ff;
-   
-}
-.btn_group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem 0;
-}
-.github{
-    padding: 20px;
-    border: 1px solid  #0A96A6;
-    width: 300px;
-    background-color: white;
-    color: #0A96A6 !important;
-    font-size: 20px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: 2rem;
-}
-.github:hover{
-    box-shadow: 0 30px 100px 30px rgba(118,118,197,0.1);
-    border: none;
-}
-.topics{display: inline;}
-@media(max-width: 700px){
-    .btn_group{flex-direction: column; }
-    .github{
-        margin-left: 0rem;
-        margin-top: 2rem;
-    }
-    .weird_container{
-        width: 90%;
-        margin-left: 5%;
-    }
-    .project_main_text_container p{
-        width: 90%;
-        margin-left: 5%;
-    }
-}
-@media(max-width: 550px){
-    .projects_{ width: 100%; }
-}
-@media(max-width: 500px){
-    .weird_container{
-        display: none;
-    }
-    .topics{display: none;}
+@media (max-width: 500px) {
+  .weird_container {
+    display: none;
+  }
+  .topics {
+    display: none;
+  }
 }
