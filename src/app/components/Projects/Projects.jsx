@@ -103,7 +103,7 @@ const data = [
         id: "0",
         name: "Google Play",
         link: "https://play.google.com/store/apps/details?id=com.wisdomarmy",
-        icon: <ShopIcon fontSize="large" />,
+        icon: <ShopIcon />,
       },
       {
         id: "1",
@@ -149,7 +149,7 @@ const data = [
         id: "0",
         name: "Google Play",
         link: "https://play.google.com/store/apps/details?id=com.medialist",
-        icon: <ShopIcon fontSize="large" />,
+        icon: <ShopIcon />,
       },
       {
         id: "1",
